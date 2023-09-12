@@ -1,0 +1,14 @@
+asgiref
+dj-database-url
+Django
+django-cors-headers
+djangorestframework
+gunicorn
+importlib-metadata
+packaging
+psycopg2-binary
+python-dotenv
+pytz
+sqlparse
+typing-extensions
+zipp
