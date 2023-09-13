@@ -16,7 +16,7 @@ Hosted URL: [Person API](https://hogbunike.onrender.com)
 
 ## API Endpoints
 
-### Create a New Person
+## Create a New Person
 
 **Endpoint:** `/api`
 
