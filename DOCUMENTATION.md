@@ -117,7 +117,7 @@ Ensure that the request and response data adhere to the specified formats mentio
 
 
 ## How to install
-Consult the [README](https://github.com/Hogbunike/restapi/blob/a824ac1ba7e89498055239649f9794530f5a4be6/README.md)
+Check the [README](https://github.com/Hogbunike/restapi/blob/a824ac1ba7e89498055239649f9794530f5a4be6/README.md)
 
 
 
