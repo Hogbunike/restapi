@@ -1,9 +1,9 @@
-# API DOCUMENTATION
+# API Documentation
 
-Welcome to the documentation for the HNGx Person API. This API provides basic CRUD operations for managing persons.
-Hosted URL: [Person API](https://hogbunike.onrender.com)
+Welcome to the documentation for the **HNGx Person API**. This API provides basic CRUD operations for managing persons.
+hosted url - [Person API](https://person-y064.onrender.com)
+## Table of Contents
 
-## Table Of Contents
 - [API Endpoints](#api-endpoints)
   - [Create a New Person](#create-a-new-person)
   - [Fetch Details of a Person](#fetch-details-of-a-person)
@@ -16,7 +16,7 @@ Hosted URL: [Person API](https://hogbunike.onrender.com)
 
 ## API Endpoints
 
-## Create a New Person
+### Create a New Person
 
 **Endpoint:** `/api`
 
@@ -25,29 +25,58 @@ Hosted URL: [Person API](https://hogbunike.onrender.com)
 **Request Format:**
 ```json
 {
-  "name": "Henry Ogbunike"
+  "name": "John Doe"
 }
 ```
 **Response Format (Success - HTTP 201 Created):**
 ```json
 {
-  "id": 5,
-  "name": "Henry Ogbunike"
+  "id": 1,
+  "name": "John Doe",
+  "email": null,
+  "username": "john-doe"
 }
-
-
+```
+<img width="900" alt="post" src="https://github.com/bensonisaac/two/assets/131260531/8a31e4c6-315e-439a-bcd4-69572264e933">
 
 
 **Response Format (Error - HTTP 400 Bad Request):**
 ```json
 {
+  "error": "Invalid data. Check the request format."
+}
+```
+**When Trying A Number**
+```json
+{
     "name": "Name must be a string."
 
 }
+```
+<img width="902" alt="number not allowed" src="https://github.com/bensonisaac/two/assets/131260531/822b63e1-3537-45e8-b467-18b9ae25cab4">
 
+## Fetch Details of a Person
+**Endpoint:** /api/<person_id>
 
-![image](https://github.com/Hogbunike/restapi/assets/105209315/530c458c-bf14-41ee-bdf1-ea7d4e7a31e7)
+**Method:** GET
 
+**Response Format (Success - HTTP 200 OK):**
+```json
+{
+  "id": 1,
+  "name": "John Doe",
+  "email": "john@example.com",
+  "username": "johndoe"
+}
+```
+<img width="897" alt="get" src="https://github.com/bensonisaac/two/assets/131260531/cfcb1065-d9a4-4846-8d6c-68e6ec01eb4d">
+
+**Response Format (Error - HTTP 404 Not Found):**
+```json
+{
+  "error": "Not found."
+}
+```
 ## Update Details of a Person
 **Endpoint:** /api/<person_id>
 
@@ -56,18 +85,21 @@ Hosted URL: [Person API](https://hogbunike.onrender.com)
 **Request Format:**
 ```json
 {
-  "name": "Henry"
+  "name": "Updated Name",
+  "email": "updated@example.com",
+  "username": "updatedusername"
 }
 ```
-
-**Response Format (Success - HTTP 200 OK):**
+**Request Format:**
 ```json
 {
-  "id": 4,
-  "name": "Henry"
+  "id": 1,
+  "name": "Updated Name",
+  "email": "updated@example.com",
+  "username": "updatedusername"
 }
 ```
-![image](https://github.com/Hogbunike/restapi/assets/105209315/32a706b5-7836-42b6-90e8-65bb042dbbb1)
+<img width="895" alt="put" src="https://github.com/bensonisaac/two/assets/131260531/0f6d08c2-0248-4804-86b7-004b633c7c46">
 
 ## Remove a Person
 **Endpoint:** /api/<person_id>
@@ -77,7 +109,18 @@ Hosted URL: [Person API](https://hogbunike.onrender.com)
 **Response Format (Success - HTTP 204 No Content):**
 
 No response body.
-![image](https://github.com/Hogbunike/restapi/assets/105209315/f6c5d4fa-b7c6-4a75-aa52-1774c929ee59)
+
+**Response Format (Error - HTTP 404 Not Found):**
+
+```json
+{
+  "error": "Person not found."
+}
+```
+
+<img width="896" alt="delete" src="https://github.com/bensonisaac/two/assets/131260531/3b9cf8e4-3601-4c0e-9f3a-3df21203f9b1">
+
+<img width="896" alt="get-error" src="https://github.com/bensonisaac/two/assets/131260531/742ac2ba-4d55-4d27-b621-9f8a74740496">
 
 ## Request and Response Formats
 All API endpoints accept and return data in JSON format.
@@ -91,12 +134,13 @@ Ensure that the request and response data adhere to the specified formats mentio
 - This documentation assumes a local development setup.
 - Authentication and authorization mechanisms are not implemented
 
-
+## UML Diagram
+Link to [UML](https://lucid.app/documents/embedded/28de1370-635c-4271-9cdd-e4855cf5fba4?invitationId=inv_c740a44f-25e0-4bea-94f3-79d9330d6d8e#)
 
 
 
 ## How to install
-Consult the [README](https://github.com/Hogbunike/restapi/blob/69c09c1fc022720b0bbdfee1acbe959a956a18bf/README.md)
+Consult the [README](https://github.com/bensonisaac/two/blob/main/README.md)
 
 
 
