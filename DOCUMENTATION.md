@@ -37,15 +37,7 @@ Hosted URL: [Person API](https://hogbunike.onrender.com)
 
 
 
-**When Trying A Number**
-**Method:** POST
 
-**Request Format:**
-```json
-{
-  "name": 44
-}
-```
 **Response Format (Error - HTTP 400 Bad Request):**
 ```json
 {
@@ -53,18 +45,7 @@ Hosted URL: [Person API](https://hogbunike.onrender.com)
 
 }
 
-## Fetch Details of a Person
-**Endpoint:** /api/<person_id>
 
-**Method:** GET
-
-**Response Format (Success - HTTP 200 OK):**
-```json
-{
-  "id": 4,
-  "name": "Henry Ogbunike"
-}
-```
 ![image](https://github.com/Hogbunike/restapi/assets/105209315/530c458c-bf14-41ee-bdf1-ea7d4e7a31e7)
 
 ## Update Details of a Person
