@@ -31,7 +31,7 @@ Hosted URL: [Person API](https://hogbunike.onrender.com)
 **Response Format (Success - HTTP 201 Created):**
 ```json
 {
-  "name": "John Doe"
+  "name": "Henry Ogbunike"
 }
 
 ![image](https://github.com/Hogbunike/restapi/assets/105209315/af1adacf-4bbb-48f3-8116-647db3160726)
@@ -51,8 +51,8 @@ Hosted URL: [Person API](https://hogbunike.onrender.com)
     "name": "Name must be a string."
 
 }
+![image](https://github.com/Hogbunike/restapi/assets/105209315/27a870c3-6370-44f8-bec4-1c39bcea35f8)
 
-![image](https://github.com/Hogbunike/restapi/assets/105209315/15f1d00e-0ab7-45bf-8178-3fc8def4178d)
 
 ## Fetch Details of a Person
 **Endpoint:** /api/<person_id>
