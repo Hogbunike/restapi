@@ -112,6 +112,7 @@ Ensure that the request and response data adhere to the specified formats mentio
 - This documentation assumes a local development setup.
 - Authentication and authorization mechanisms are not implemented
 
+Link to UML: https://lucid.app/lucidchart/invitations/accept/inv_b5aa4e64-c051-4beb-ad03-fba84b81839f
 
 
 
